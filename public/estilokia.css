@@ -375,8 +375,11 @@ footer{
   }
 
   .hero{
-    height:45vh;
-    background-position:top center;
+    height:50vh;
+    background-size:contain;
+    background-position:center;
+    background-color:#F0F8FF;
+    background-repeat:no-repeat;
   }
 }
 
