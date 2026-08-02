@@ -38,7 +38,7 @@
     totalEl.textContent = formatearPrecioCheckout(total);
   
     // Arma el mensaje de WhatsApp con el resumen del pedido
-    var numeroWhatsapp = '5490000000000'; // ← reemplazar por tu número con código de país, sin +
+    var numeroWhatsapp = '542975167569'; // ← reemplazar por tu número con código de país, sin +
     var mensaje =
       'Hola! Quiero confirmar mi pedido de Kia Craft:\n\n' +
       mensajeItems +
