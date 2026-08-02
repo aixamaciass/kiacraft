@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Kia Craft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilokia.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="./imagenes/kiacraftlogo.png" alt="Logo Kia Craft">
+    </div>
+    <ul>
+      <li><a href="kiacraft.html">Inicio</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Productos</a>
+        <ul class="submenu">
+          <li><a href="papeleria.html">Papelería</a></li>
+          <li><a href="regaleria.html">Regalería</a></li>
+        </ul>
+      </li>
+      <li><a href="personalizados.html">Personalizados</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-derecha">
+      <button id="menu-boton" class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+
+  <div class="checkout-container">
+
+    <div class="titulo-pagina">
+      <h2>Finalizar compra</h2>
+    </div>
+
+    <div class="checkout-grid">
+
+      <!-- Resumen del pedido -->
+      <div class="checkout-resumen">
+        <h3>Tu pedido</h3>
+        <div id="checkout-items"></div>
+        <div class="checkout-total">
+          <span>Total</span>
+          <span id="checkout-total-monto">$0</span>
+        </div>
+      </div>
+
+      <!-- Datos para pagar -->
+      <div class="checkout-pago">
+        <h3>Cómo pagar</h3>
+        <p class="checkout-subtexto">Transferí el monto total por el medio que prefieras:</p>
+
+        <div class="metodo-pago">
+          <h4>💳 Mercado Pago</h4>
+          <p>Alias: <strong>kia-personalizados-7</strong></p>
+        </div>
+
+        <div class="metodo-pago">
+          <h4>🏦 Banco Macro</h4>
+          <p>Alias: <strong>KIA-CRAFT-CALETA</strong></p>
+          <p>CBU: <strong>0000000000000000000000</strong></p>
+        </div>
+
+        <p class="checkout-subtexto">
+          Una vez transferido, enviame el comprobante por WhatsApp para confirmar tu pedido:
+        </p>
+
+        <a id="btn-whatsapp" href="#" target="_blank" class="checkout-whatsapp">
+          📲 Enviar comprobante por WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Kia Craft Store - Diseños personalizados & papelería creativa.</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="./checkout.js"></script>
+  <script src="./menu.js"></script>
+</body>
+</html>

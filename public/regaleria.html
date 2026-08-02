@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regalería - Kia Craft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilokia.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="./imagenes/kiacraftlogo.png" alt="Logo Kia Craft">
+    </div>
+    <ul>
+      <li><a href="kiacraft.html">Inicio</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Productos</a>
+        <ul class="submenu">
+          <li><a href="papeleria.html">Papelería</a></li>
+          <li><a href="regaleria.html">Regalería</a></li>
+        </ul>
+      </li>
+      <li><a href="personalizados.html">Personalizados</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-derecha">
+      <button id="carrito-boton" class="carrito-btn">
+        🛒 <span id="carrito-cantidad">0</span>
+      </button>
+      <button id="menu-boton" class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+
+  <div class="tienda-container">
+    
+    <div class="titulo-pagina">
+      <h2>Regalería</h2>
+    </div>
+
+    <div class="grid-productos" id="grid-productos" data-categoria="Regalería"></div>
+
+    <div id="miGaleriaFlotante" class="modal-galeria" onclick="cerrarGaleriaFuera(event)">
+      <div class="modal-contenido">
+        <span class="btn-cerrar" onclick="cerrarGaleria()">&times;</span>
+        <div class="visor-contenedor">
+          <button class="flecha flecha-izq" onclick="cambiarFoto(-1)">&#10094;</button>
+          <img id="imagenPrincipalVisor" class="visor-imagen-principal" src="" alt="Visor">
+          <button class="flecha flecha-der" onclick="cambiarFoto(1)">&#10095;</button>
+        </div>
+        <div id="contenedorMiniaturas" class="miniaturas-contenedor"></div>
+        <div class="visor-info">
+          <h3 id="visorTitulo"></h3>
+          <p id="visorDescripcion"></p>
+          <button id="visorAgregarBtn" class="producto-boton">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <p> Kia Craft Store - Diseños personalizados & papelería creativa.</p>
+  </footer>
+
+  <!-- Carrito -->
+  <div id="carrito-overlay" class="carrito-overlay"></div>
+  <aside id="carrito-panel" class="carrito-panel">
+    <div class="carrito__header">
+      <h3 class="carrito__titulo">Carrito</h3>
+      <button id="carrito-cerrar" class="carrito__cerrar">✕</button>
+    </div>
+    <div id="carrito-items" class="carrito__items">
+      <div class="carrito__vacio"><div class="carrito__vacio-icono">🛒</div><p>Tu carrito está vacío</p></div>
+    </div>
+    <div class="carrito__footer">
+      <div class="carrito__total"><span class="carrito__total-label">Total</span><span id="carrito-total" class="carrito__total-valor">$0</span></div>
+      <button id="btn-checkout" class="carrito__checkout">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="../data/productos.js"></script>
+  <script src="./tienda.js"></script>
+  <script src="./menu.js"></script>
+</body>
+</html>
