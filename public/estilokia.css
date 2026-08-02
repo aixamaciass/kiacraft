@@ -239,6 +239,7 @@ nav ul li a:hover{
   overflow:hidden;
   box-shadow:0 6px 20px rgba(0,0,0,0.06);
   transition:0.3s;
+  cursor: pointer;
 }
 
 .card:hover{
@@ -355,6 +356,40 @@ nav ul li a:hover{
   font-size:20px;
   color:#73b8c7;
   font-weight:600;
+}
+
+/* CTA PERSONALIZADOS */
+
+.personalizados-cta{
+  text-align:center;
+  padding:60px 8%;
+}
+
+.personalizados-cta h3{
+  font-size:32px;
+  color:#5fa7a5;
+  margin-bottom:30px;
+}
+
+.personalizados-cta-botones{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.personalizados-cta-botones button{
+  width:auto;
+  padding:14px 30px;
+  border-radius:40px;
+}
+
+.producto-boton--whatsapp{
+  background:#8fd0d0;
+}
+
+.producto-boton--whatsapp:hover{
+  background:#79c1c1;
 }
 
 /* FOOTER */

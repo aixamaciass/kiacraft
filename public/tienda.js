@@ -211,12 +211,23 @@ function configurarBotonAgregarVisor() {
   });
 }
 
+function configurarBotonPedirWhatsappVisor() {
+  var boton = document.getElementById('visorPedirWhatsappBtn');
+  if (!boton) return;
+  boton.addEventListener('click', function () {
+    var titulo = document.getElementById('visorTitulo').textContent;
+    var mensaje = 'Hola! Quiero pedir un producto personalizado: ' + titulo + '. ¿Me pasás precio y tiempos de entrega?';
+    window.open('https://wa.me/542975167569?text=' + encodeURIComponent(mensaje), '_blank');
+  });
+}
+
 // ===== INICIO =====
 document.addEventListener('DOMContentLoaded', function () {
   renderizarProductos();       // ← nuevo, primero
   configurarCarrito();
   configurarBotonesAgregar();
   configurarBotonAgregarVisor();
+  configurarBotonPedirWhatsappVisor();   // ← nueva línea
   actualizarCarrito();
 
   // ===== RENDER AUTOMÁTICO DE PRODUCTOS (página Productos) =====
