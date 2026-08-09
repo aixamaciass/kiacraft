@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impresiones y Diseños - Kia Craft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilokia.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="./imagenes/kiacraftlogo.png" alt="Logo Kia Craft">
+    </div>
+    <ul>
+      <li><a href="kiacraft.html">Inicio</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Productos</a>
+        <ul class="submenu">
+          <li><a href="papeleria.html">Papelería</a></li>
+          <li><a href="regaleria.html">Regalería</a></li>
+        </ul>
+      </li>
+      <li><a href="personalizados.html">Personalizados</a></li>
+      <li><a href="impresiones">Impresiones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-derecha">
+      <button id="menu-boton" class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+
+  <div class="imprenta-container">
+
+    <div class="titulo-pagina">
+      <h2>Impresiones y Diseños</h2>
+      <p>
+        Realizamos impresiones de calidad para trabajos escolares, proyectos, emprendimientos y eventos.
+        Consultanos por tamaños, formatos y cantidades disponibles.
+      </p>
+    </div>
+
+    <!-- TIPOS DE IMPRESIONES -->
+    <section class="imprenta-seccion">
+      <h3>Tipos de impresiones</h3>
+      <ul class="imprenta-lista">
+        <li>Impresiones a color</li>
+        <li>Impresiones en blanco y negro</li>
+        <li>Fotocopias</li>
+        <li>Trabajos prácticos</li>
+        <li>Apuntes y documentos</li>
+        <li>Etiquetas personalizadas</li>
+        <li>Invitaciones</li>
+        <li>Tarjetas</li>
+        <li>Cartelería</li>
+        <li>Diseños personalizados</li>
+      </ul>
+    </section>
+
+    <!-- FORMATOS DISPONIBLES -->
+    <section class="imprenta-seccion">
+      <h3>Formatos disponibles</h3>
+      <ul class="imprenta-lista">
+        <li>A4</li>
+        <li>A3</li>
+        <li>Otros tamaños (consultar)</li>
+      </ul>
+    </section>
+
+    <!-- DISEÑOS PERSONALIZADOS -->
+    <section class="imprenta-seccion">
+      <h3>Diseños personalizados</h3>
+      <p>¿Tenés una idea? Podemos ayudarte a crear diseños únicos para tus eventos, emprendimientos o regalos.</p>
+    </section>
+
+    <!-- COMO PEDIR -->
+    <section class="imprenta-seccion">
+      <h3>¿Cómo pedir tu impresión?</h3>
+      <ol class="imprenta-pasos">
+        <li>Enviá tu archivo o contanos tu idea.</li>
+        <li>Elegimos tamaño, papel y acabado.</li>
+        <li>Te pasamos el presupuesto actualizado.</li>
+        <li>Preparamos tu pedido.</li>
+      </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="imprenta-cta">
+      <a href="https://wa.me/542975167569?text=Hola!%20Quiero%20consultar%20precio%20por%20una%20impresi%C3%B3n" target="_blank">
+        <button class="producto-boton producto-boton--whatsapp">Consultar precio</button>
+      </a>
+      <p class="imprenta-aclaracion">
+        Los precios pueden variar según tamaño, cantidad, tipo de papel y diseño. Consultá el valor actualizado.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Kia Craft Store - Diseños personalizados & papelería creativa.</p>
+  </footer>
+
+  <script src="./menu.js"></script>
+</body>
+</html>

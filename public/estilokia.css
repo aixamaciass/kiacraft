@@ -1060,3 +1060,74 @@ footer{
     grid-template-columns:1fr;
   }
 }
+/* IMPRESIONES */
+
+.imprenta-container{
+  max-width:900px;
+  margin:0 auto;
+  padding:50px 6%;
+}
+
+.imprenta-seccion{
+  background:white;
+  border-radius:20px;
+  padding:25px 30px;
+  margin-bottom:25px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.06);
+}
+
+.imprenta-seccion h3{
+  color:#5fa7a5;
+  margin-bottom:15px;
+}
+
+.imprenta-lista{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:10px 20px;
+}
+
+.imprenta-lista li{
+  padding-left:20px;
+  position:relative;
+  color:#555;
+}
+
+.imprenta-lista li::before{
+  content:"🖨";
+  position:absolute;
+  left:0;
+}
+
+.imprenta-pasos{
+  padding-left:20px;
+}
+
+.imprenta-pasos li{
+  margin-bottom:10px;
+  color:#555;
+}
+
+.imprenta-cta{
+  text-align:center;
+  margin-top:40px;
+}
+
+.imprenta-cta button{
+  width:auto;
+  padding:14px 35px;
+  border-radius:40px;
+}
+
+.imprenta-aclaracion{
+  margin-top:15px;
+  font-size:13px;
+  color:#8a9b9e;
+}
+
+@media(max-width:600px){
+  .imprenta-lista{
+    grid-template-columns:1fr;
+  }
+}
